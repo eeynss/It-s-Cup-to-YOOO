@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>It's Cup to Yoo</title>
+  <link rel="stylesheet" href="css/yogurt.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="It's Cup to Yoo home">
+      <img src="img/logo.png" alt="It's Cup to Yoo logo">
+      <span>It's Cup to Yoo</span>
+    </a>
+
+    <button class="menu-button" type="button" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">☰</button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="#cakes">Cakes</a>
+      <a href="#shop">Shop</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Frozen yogurt • Ice cream • Snacks</p>
+        <h1>More than just froyo!</h1>
+        <p class="lead">Build your perfect cup with creamy swirls, sauces, candies, fruits, and crunchy toppings.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="menu.html">See the menu</a>
+          <a class="button secondary" href="#shop">Visit us</a>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-live="polite">
+        <p class="floating-text">The cup changes!</p>
+        <img id="hero-product" src="img/prod.png" alt="Featured yogurt cup">
+        <h2 id="hero-title">Classic Froyo Cup</h2>
+        <p id="hero-desc">Creamy soft serve with fun toppings.</p>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-heading">
+        <p class="eyebrow">How do you cup?</p>
+        <h2>Pick a flavor, add your toppings, enjoy your cup.</h2>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-card">
+          <img src="img/boba.png" alt="Boba sundae cup">
+          <h3>Sundae Boba</h3>
+          <p>Soft serve, syrup, and chewy boba pearls.</p>
+        </article>
+        <article class="menu-card">
+          <img src="img/matchaice.png" alt="Matcha ice cream cup">
+          <h3>Matcha Cream</h3>
+          <p>Earthy matcha flavor with a smooth finish.</p>
+        </article>
+        <article class="menu-card">
+          <img src="img/straw.png" alt="Strawberry bliss cup">
+          <h3>Strawberry Bliss</h3>
+          <p>Fruity, sweet, and perfect for sharing.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="feature-section" id="cakes">
+      <div class="cake-copy">
+        <p class="eyebrow">Or try the classics</p>
+        <h2 id="cake-title">Banana Tiramisu</h2>
+        <p id="cake-desc">A chilled cake with banana flavor and creamy layers.</p>
+        <button class="button primary" id="cake-next" type="button">Change cake item</button>
+      </div>
+      <div class="cake-frame">
+        <img id="cake-image" src="img/tiramisu.png" alt="Banana tiramisu cake">
+      </div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="shop-card">
+        <div>
+          <h2>Come cup with us</h2>
+          <p>Fresh toppings, colorful cups, cozy seats, and happy dessert moments.</p>
+        </div>
+        <img src="img/5.png" alt="Inside the It's Cup to Yoo shop">
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div>
+      <h2>It's Cup to Yoo</h2>
+      <p>Frozen yogurt, ice cream, and snacks.</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/itscuptoyoo/">Instagram</a>
+      <a href="mailto:hello@itscuptoyoo.com">Email us</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
