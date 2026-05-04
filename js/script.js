@@ -1,26 +1,26 @@
 var heroItems = [
   {
-    image: "img/prod.png",
+    image: "img/prod.webp",
     title: "Classic Froyo Cup",
     desc: "Creamy soft serve with fun toppings."
   },
   {
-    image: "img/prod1.png",
+    image: "img/prod1.webp",
     title: "Loaded Dessert Cup",
     desc: "A sweet mix of sauce, crunch, and soft serve."
   },
   {
-    image: "img/prod2.png",
+    image: "img/prod2.webp",
     title: "Party Sprinkle Cup",
     desc: "Colorful, fun, and made for sharing."
   },
   {
-    image: "img/boba.png",
+    image: "img/boba.webp",
     title: "Sundae Boba",
     desc: "Soft serve with chewy boba pearls."
   },
   {
-    image: "img/matchaice.png",
+    image: "img/matchaice.webp",
     title: "Matcha Cream",
     desc: "A green tea favorite with a creamy swirl."
   }
@@ -28,22 +28,22 @@ var heroItems = [
 
 var cakeItems = [
   {
-    image: "img/tiramisu.png",
+    image: "img/tiramisu.webp",
     title: "Banana Tiramisu",
     desc: "A chilled cake with banana flavor and creamy layers."
   },
   {
-    image: "img/mgraham.png",
+    image: "img/mgraham.webp",
     title: "Mango Graham",
     desc: "Sweet mango, cream, and graham crunch in every slice."
   },
   {
-    image: "img/choco.png",
+    image: "img/choco.webp",
     title: "Chocolate Soft Serve",
     desc: "Rich chocolate swirl for a classic dessert moment."
   },
   {
-    image: "img/float.png",
+    image: "img/float.webp",
     title: "Matcha Milktea Float",
     desc: "A refreshing drink topped with soft serve."
   }
