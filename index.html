@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>It's Cup to Yoo</title>
   <link rel="stylesheet" href="css/yogurt.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
   <header class="site-header">
@@ -18,16 +19,15 @@
     <nav class="site-nav" id="site-nav" aria-label="Main navigation">
       <a href="#home">Home</a>
       <a href="menu.html">Menu</a>
-      <a href="#cakes">Cakes</a>
-      <a href="#shop">Shop</a>
+      <a href="#shop">Location</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="home">
+    <section class="hero" id="home"  >
       <div class="hero-copy">
-        <p class="eyebrow">Frozen yogurt • Ice cream • Snacks</p>
+        <p class="eyebrow" >Frozen yogurt • Ice cream • Snacks</p>
         <h1>More than just froyo!</h1>
         <p class="lead">Build your perfect cup with creamy swirls, sauces, candies, fruits, and crunchy toppings.</p>
         <div class="hero-actions">
@@ -37,72 +37,184 @@
       </div>
 
       <div class="hero-card" aria-live="polite">
-        <p class="floating-text">The cup changes!</p>
         <img id="hero-product" src="img/prod.webp" alt="Featured yogurt cup">
         <h2 id="hero-title">Classic Froyo Cup</h2>
         <p id="hero-desc">Creamy soft serve with fun toppings.</p>
       </div>
     </section>
 
-    <section class="menu-section" id="menu">
-      <div class="section-heading">
-        <p class="eyebrow">How do you cup?</p>
-        <h2>Pick a flavor, add your toppings, enjoy your cup.</h2>
-      </div>
+<section class="menu-section" id="menu">
 
-      <div class="menu-grid">
-        <article class="menu-card">
-          <img src="img/boba.webp" alt="Boba sundae cup">
-          <h3>Sundae Boba</h3>
-          <p>Soft serve, syrup, and chewy boba pearls.</p>
-        </article>
-        <article class="menu-card">
-          <img src="img/matchaice.webp" alt="Matcha ice cream cup">
-          <h3>Matcha Cream</h3>
-          <p>Earthy matcha flavor with a smooth finish.</p>
-        </article>
-        <article class="menu-card">
-          <img src="img/straw.webp" alt="Strawberry bliss cup">
-          <h3>Strawberry Bliss</h3>
-          <p>Fruity, sweet, and perfect for sharing.</p>
-        </article>
+  <div class="wave-bg">
+    <div class="wave-middle">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path d="M0,192L80,176C160,160,320,128,480,144C640,160,800,224,960,240C1120,256,1280,224,1360,208L1440,192L1440,0L0,0Z"></path>
+      </svg>
+    </div>
+
+    <div class="wave-bottom">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path d="M0,224L80,240C160,256,320,288,480,266.7C640,245,800,171,960,149.3C1120,128,1280,160,1360,176L1440,192L1440,320L0,320Z"></path>
+      </svg>
+    </div>
+  </div>
+
+    <div class="section-heading">
+      <p class="eyebrow">How do you cup?</p>
+      <h2>Pick a flavor, add your toppings, enjoy your cup.</h2>
+    </div>
+
+    <div class="how-to-cup">
+      <img src="img/how-to-cup.png" alt="How to cup">
+    </div>
+
+</section>
+
+    <section class="experience-section" data-aos="fade-up">
+      <h2 data-aos="zoom-in">Share your experience with us!</h2>
+      <p data-aos="fade-up" data-aos-delay="200">Use #ItsCupToYoo and tag us</p>
+
+      <div class="auto-scroll">
+        <div class="scroll-track">
+
+          <!-- FIRST SET -->
+          <div class="post-card">
+            <img src="img/scroll/chat.webp" alt="Dessert cup">
+            <h3>It's Cup to Yoo</h3>
+            <p>Colorful toppings, happy moments 😍</p>
+          </div>
+
+          <div class="post-card">
+            <img src="img/shares/s2.webp" alt="Sprinkle cup">
+            <h3>It's Cup to Yoo</h3>
+            <p>Fresh, fun, and made for you ✨</p>
+          </div>
+
+          <div class="post-card">
+            <img src="img/shares/s3.webp" alt="Boba dessert">
+            <h3>It's Cup to Yoo</h3>
+            <p>Raise your hand if you love boba 🙋</p>
+          </div>
+
+          <div class="post-card">
+            <img src="img/shares/s4.webp" alt="Frozen yogurt cup">
+            <h3>It's Cup to Yoo</h3>
+            <p>Build your own sweet cup 🍦</p>
+          </div>
+
+          <div class="post-card">
+            <img src="img/shares/s5.webp" alt="Frozen yogurt toppings">
+            <h3>It's Cup to Yoo</h3>
+            <p>Sweet toppings, sweet memories 🍓</p>
+          </div>
+
+
+          <div class="post-card">
+            <img src="img/scroll/chat.webp" alt="Dessert cup">
+            <h3>It's Cup to Yoo</h3>
+            <p>Colorful toppings, happy moments 😍</p>
+          </div>
+
+          <div class="post-card">
+            <img src="img/shares/s4.webp" alt="Sprinkle cup">
+            <h3>It's Cup to Yoo</h3>
+            <p>Fresh, fun, and made for you ✨</p>
+          </div>
+
+          <div class="post-card">
+            <img src="img/shares/s1.webp" alt="Boba dessert">
+            <h3>It's Cup to Yoo</h3>
+            <p>Raise your hand if you love boba 🙋</p>
+          </div>
+
+          <div class="post-card">
+            <img src="img/shares/s7.webp" alt="Frozen yogurt cup">
+            <h3>It's Cup to Yoo</h3>
+            <p>Build your own sweet cup 🍦</p>
+          </div>
+
+          <div class="post-card">
+            <img src="img/shares/s6.webp" alt="Frozen yogurt toppings">
+            <h3>It's Cup to Yoo</h3>
+            <p>Sweet toppings, sweet memories 🍓</p>
+          </div>
+
+        </div>
+      </div>
+          <div class="follow-us" data-aos="fade-right">
+        <h2 data-aos="zoom-in">••• FOLLOW US ON:</h2>
+        <div class="social-icons">
+          <a href="#">
+            <img src="img/social/facebook.png" alt="Facebook">
+          </a>
+          <a href="#">
+            <img src="img/social/instagram.png" alt="Instagram">
+          </a>
+          <a href="#">
+            <img src="img/social/tiktok.png" alt="TikTok">
+          </a>
+        </div>
       </div>
     </section>
 
-    <section class="feature-section" id="cakes">
-      <div class="cake-copy">
-        <p class="eyebrow">Or try the classics</p>
-        <h2 id="cake-title">Banana Tiramisu</h2>
-        <p id="cake-desc">A chilled cake with banana flavor and creamy layers.</p>
-        <button class="button primary" id="cake-next" type="button">Change cake item</button>
-      </div>
-      <div class="cake-frame">
-        <img id="cake-image" src="img/tiramisu.webp" alt="Banana tiramisu cake">
-      </div>
-    </section>
 
-    <section class="shop-section" id="shop">
-      <div class="shop-card">
+    <section class="location" id="shop">
+      <div class="loc-card">
         <div>
           <h2>Come cup with us</h2>
           <p>Fresh toppings, colorful cups, cozy seats, and happy dessert moments.</p>
         </div>
-        <img src="img/5.webp" alt="Inside the It's Cup to Yoo shop">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463.04705435798417!2d120.62805575483277!3d15.223682368450731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396ef002294af61%3A0xf764bbf7277d75d1!2sIt&#39;s%20Cup%20to%20Yoo!5e0!3m2!1sen!2sph!4v1777898935137!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>
 
   <footer class="site-footer" id="contact">
-    <div>
-      <h2>It's Cup to Yoo</h2>
-      <p>Frozen yogurt, ice cream, and snacks.</p>
-    </div>
-    <div class="footer-links">
-      <a href="https://www.instagram.com/itscuptoyoo/">Instagram</a>
-      <a href="mailto:hello@itscuptoyoo.com">Email us</a>
-    </div>
-  </footer>
 
+    <div class="footer-product">
+
+      <div class="footer-logo">
+        <img src="img/logo.webp" alt="">
+      </div>
+    </div>
+
+    <div class="footer-inner">
+
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/">
+            <img src="img/social/facebook.png" alt="">
+          </a>
+          <a href="https://www.instagram.com/itscuptoyoo/">
+            <img src="img/social/instagram.png" alt="">
+          </a>
+          <a href="https://www.tiktok.com/">
+            <img src="img/social/tiktok.png" alt="">
+          </a>
+          <a href="gmailto:">
+            <img src="img/social/gmail.webp" alt="">
+          </a>
+        </div>
+
+      <div class="footer-copy">
+        <p>© 2026 It's Cup to Yoo. All Rights Reserved</p>
+
+        <p>
+          Frozen yogurt, ice cream, snacks, and self-serve treats made for every craving.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="mailto:hello@itscuptoyoo.com">Email us</a>
+        <a href="https://www.instagram.com/itscuptoyoo/">Instagram</a>
+      </div>
+
+    </div>
+
+  </footer>
   <script src="js/script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({offset:0});
+  </script>
 </body>
 </html>

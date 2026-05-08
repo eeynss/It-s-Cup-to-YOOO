@@ -18,23 +18,21 @@
     <nav class="site-nav" id="site-nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="menu.html">Menu</a>
-      <a href="#flavors">Flavors</a>
-      <a href="#toppings">Toppings</a>
-      <a href="#more">More</a>
+      <a href="index.html#shop">Location</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section class="menu-hero" id="top">
-      <p class="eyebrow">Our most beloved</p>
-      <h1>YOOOO!</h1>
-      <div class="froyo-row" aria-label="Featured froyo cups">
-        <img src="img/prod.webp" alt="Loaded caramel froyo cup">
-        <img src="img/prod1.webp" alt="Chocolate and caramel froyo cup">
-        <img src="img/prod2.webp" alt="Colorful froyo cup">
-        <img src="img/boba.webp" alt="Boba froyo cup">
+    <section class="slider" id="top">
+      <div class="slider-headings">
+        <p class="eyebrow">OUR MOST BELOVED</p>
+        <h1>YOOOO!</h1>
+        <p class="description">
+         Create your own perfect cup with our self-serve frozen yogurt, ice cream, and delicious toppings. Mix flavors, candies, fruits, and syrups to make every treat fun and uniquely yours.
+        </p>
       </div>
-      <p class="menu-intro">Our froyo flavors are creamy, colorful, and made for your favorite toppings.</p>
+      <p id="slide-title">YOOOOO!</p>
     </section>
 
     <section class="flavor-section" id="flavors">
@@ -163,9 +161,9 @@
     </section>
 
     <section class="more-menu" id="more">
+      <h1>We do not stop at YOO</h1>
       <article>
         <div>
-          <p class="eyebrow">We do not stop at YOOOO</p>
           <h2>Smoothies and shakes</h2>
           <p>Cool fruit drinks, milktea floats, and creamy shakes for every craving.</p>
         </div>
@@ -183,17 +181,55 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div>
-      <h2>It's Cup to Yoo</h2>
-      <p>Frozen yogurt, ice cream, and snacks.</p>
+  <footer class="site-footer" id="contact">
+
+    <div class="footer-product">
+
+      <div class="footer-logo">
+        <img src="img/logo.webp" alt="">
+      </div>
+
     </div>
-    <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="mailto:hello@itscuptoyoo.com">Email us</a>
+
+    <div class="footer-inner">
+
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/">
+            <img src="img/social/facebook.png" alt="">
+          </a>
+          <a href="https://www.instagram.com/itscuptoyoo/">
+            <img src="img/social/instagram.png" alt="">
+          </a>
+          <a href="https://www.tiktok.com/">
+            <img src="img/social/tiktok.png" alt="">
+          </a>
+          <a href="gmailto:">
+            <img src="img/social/gmail.webp" alt="">
+          </a>
+        </div>
+
+      <div class="footer-copy">
+        <p>© 2026 It's Cup to Yoo. All Rights Reserved</p>
+
+        <p>
+          Frozen yogurt, ice cream, snacks, and self-serve treats made for every craving.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="mailto:hello@itscuptoyoo.com">Email us</a>
+        <a href="https://www.instagram.com/itscuptoyoo/">Instagram</a>
+      </div>
+
     </div>
+
   </footer>
 
-  <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({offset:0});
+  </script>
+<script src="js/script.js"></script>
 </body>
 </html>
