@@ -1,38 +1,32 @@
 
 const slideSources = [
   "img/straw.webp",
-  "img/matcha.webp",
+  "img/carbonara.webp",
   "img/choco.webp",
-  "img/mgraham.webp",
-  "img/boba1.webp",
-  "img/float.webp",
-  "img/rabbit.webp",
+  "img/spag.webp",
   "img/palabok.webp",
   "img/tiramisu1.webp",
+  "img/nachos.webp",
 ];
 
 const slideTitles = [
   "Strawberry Bliss",
-  "Matcha Cream",
+  "Creamy Carbonara",
   "Chocolate Soft Serve",
-  "Mango Graham",
-  "Sundae Boba",
-  "Matcha Milktea Float",
-  "Rabbit Float",
+  "Saucy Spaghetti",
   "Palabok",
   "Banana Tiramisu",
+  "Loaded Nachos",
 ];
 
 const slideDecorImages = [
   "img/strawpart.webp",
-  "img/matchapart.webp",
+  "img/carbonaraback.webp",
   "img/chocopart.webp",
-  "img/mgraham11.webp",
-  "img/boba2.webp",
-  "img/floats.webp",
-  "img/rabbitpart.webp",
+  "img/spagback.webp",
   "img/palabokpart.webp",
   "img/tiramisu2.webp",
+  "img/nachosback.webp",
 ];
 
 const sliderContainer = document.querySelector(".slider");
