@@ -46,6 +46,7 @@ if (sliderContainer && titleDisplay) {
   const ARC_DEPTH = 180;
   const CENTER_LIFT = 100;
   const SCROLL_LERP = 0.05;
+  
 
   const trackWidth = SLIDE_COUNT * SLIDE_GAP;
 
@@ -141,14 +142,39 @@ if (sliderContainer && titleDisplay) {
     titleDisplay.textContent = slideTitles[closestIndex];
   }
 
-  sliderContainer.addEventListener(
-    "wheel",
-    (e) => {
-      e.preventDefault();
-      scrollTarget += e.deltaY * 0.7;
-    },
-    { passive: false }
-  );
+  sliderContainer.addEventListener("wheel", (e) => {
+    if (!e.shiftKey) return;
+
+    e.preventDefault();
+    scrollTarget += e.deltaY * 0.7;
+  }, { passive: false });
+
+  let isDragging = false;
+  let startX = 0;
+
+  sliderContainer.addEventListener("pointerdown", (e) => {
+    isDragging = true;
+    startX = e.clientX;
+    sliderContainer.style.cursor = "grabbing";
+  });
+
+  sliderContainer.addEventListener("pointermove", (e) => {
+    if (!isDragging) return;
+
+    const moveX = e.clientX - startX;
+    scrollTarget -= moveX * 1.5;
+    startX = e.clientX;
+  });
+
+  sliderContainer.addEventListener("pointerup", () => {
+    isDragging = false;
+    sliderContainer.style.cursor = "grab";
+  });
+
+  sliderContainer.addEventListener("pointerleave", () => {
+    isDragging = false;
+    sliderContainer.style.cursor = "grab";
+  });
 
   function animate() {
     scrollCurrent += (scrollTarget - scrollCurrent) * SCROLL_LERP;

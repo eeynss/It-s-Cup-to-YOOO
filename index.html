@@ -17,10 +17,17 @@
     <button class="menu-button" type="button" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">☰</button>
 
     <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-      <a href="#home">Home</a>
-      <a href="menu.html">Menu</a>
-      <a href="#shop">Location</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="menu.html">Menu ▾</a>
+        <div class="dropdown-menu">
+          <a href="menu.html#flavors">Flavors / Offerings</a>
+          <a href="menu.html#toppings">Toppings</a>
+          <a href="menu.html#more">Others</a>
+        </div>
+      </div>
+      <a href="index.html#shop">Location</a>
+      <a href="index.html#contact">Contact</a>
     </nav>
   </header>
 
@@ -28,11 +35,12 @@
     <section class="hero" id="home"  >
       <div class="hero-copy">
         <p class="eyebrow" >Frozen yogurt • Ice cream • Snacks</p>
-        <h1>More than just froyo!</h1>
+        <h1>More than just A YOO!</h1>
         <p class="lead">Build your perfect cup with creamy swirls, sauces, candies, fruits, and crunchy toppings.</p>
         <div class="hero-actions">
           <a class="button primary" href="menu.html">See the menu</a>
           <a class="button secondary" href="#shop">Visit us</a>
+          <p class="eyebrow" >Takeout • Delivery • In-Store pickup • Dine-in </p>
         </div>
       </div>
 
@@ -77,66 +85,65 @@
       <div class="auto-scroll">
         <div class="scroll-track">
 
-          <!-- FIRST SET -->
           <div class="post-card">
-            <img src="img/scroll/chat.webp" alt="Dessert cup">
+            <img src="img/scroll/chat.webp" alt="chat">
             <h3>It's Cup to Yoo</h3>
-            <p>Colorful toppings, happy moments 😍</p>
+            <p>Happy Cup Chat Moments! 😍</p>
           </div>
 
           <div class="post-card">
-            <img src="img/shares/s2.webp" alt="Sprinkle cup">
+            <img src="img/shares/s2.webp" alt="read">
             <h3>It's Cup to Yoo</h3>
-            <p>Fresh, fun, and made for you ✨</p>
+            <p>Let's Read While Getting a Cup ✨</p>
           </div>
 
           <div class="post-card">
-            <img src="img/shares/s3.webp" alt="Boba dessert">
+            <img src="img/shares/s3.webp" alt="boss">
             <h3>It's Cup to Yoo</h3>
-            <p>Raise your hand if you love boba 🙋</p>
+            <p>Build Your Cup Like A Boss 🙋</p>
           </div>
 
           <div class="post-card">
-            <img src="img/shares/s4.webp" alt="Frozen yogurt cup">
+            <img src="img/shares/s4.webp" alt="sundo">
             <h3>It's Cup to Yoo</h3>
-            <p>Build your own sweet cup 🍦</p>
+            <p>Sundo Ayaw, Yogurt Gusto? 🍦</p>
           </div>
 
           <div class="post-card">
-            <img src="img/shares/s5.webp" alt="Frozen yogurt toppings">
+            <img src="img/shares/s5.webp" alt="alarm cup">
             <h3>It's Cup to Yoo</h3>
-            <p>Sweet toppings, sweet memories 🍓</p>
+            <p>Set Your Yogurt Alarm 🍓</p>
           </div>
 
 
           <div class="post-card">
-            <img src="img/scroll/chat.webp" alt="Dessert cup">
+            <img src="img/scroll/chat.webp" alt="chatcup">
             <h3>It's Cup to Yoo</h3>
-            <p>Colorful toppings, happy moments 😍</p>
+            <p>Happy Cup Chat Moments! 😍</p>
           </div>
 
           <div class="post-card">
-            <img src="img/shares/s4.webp" alt="Sprinkle cup">
+            <img src="img/shares/s4.webp" alt="sundo">
             <h3>It's Cup to Yoo</h3>
-            <p>Fresh, fun, and made for you ✨</p>
+            <p>Sundo Ayaw, Yogurt Gusto? 🍦</p>
           </div>
 
           <div class="post-card">
-            <img src="img/shares/s1.webp" alt="Boba dessert">
+            <img src="img/shares/s1.webp" alt="sundayplan">
             <h3>It's Cup to Yoo</h3>
-            <p>Raise your hand if you love boba 🙋</p>
+            <p>Every Sunday Plans</p>
           </div>
 
           <div class="post-card">
-            <img src="img/shares/s7.webp" alt="Frozen yogurt cup">
+            <img src="img/shares/s7.webp" alt="Normal">
             <h3>It's Cup to Yoo</h3>
-            <p>Build your own sweet cup 🍦</p>
+            <p>Back To Yoo!rmal</p>
           </div>
 
           <div class="post-card">
-            <img src="img/shares/s6.webp" alt="Frozen yogurt toppings">
+            <img src="img/shares/s6.webp" alt="greet">
             <h3>It's Cup to Yoo</h3>
-            <p>Sweet toppings, sweet memories 🍓</p>
+            <p>Greetings 🍓</p>
           </div>
 
         </div>
@@ -144,13 +151,13 @@
           <div class="follow-us" data-aos="fade-right">
         <h2 data-aos="zoom-in">••• FOLLOW US ON:</h2>
         <div class="social-icons">
-          <a href="#">
+          <a href="https://www.facebook.com/itscuptoyoo" target="_blank">
             <img src="img/social/facebook.png" alt="Facebook">
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/itscuptoyoo/" target="_blank">
             <img src="img/social/instagram.png" alt="Instagram">
           </a>
-          <a href="#">
+          <a href="https://www.tiktok.com/@itscupto.yoo" target="_blank">
             <img src="img/social/tiktok.png" alt="TikTok">
           </a>
         </div>
@@ -181,16 +188,16 @@
     <div class="footer-inner">
 
         <div class="footer-socials">
-          <a href="https://www.facebook.com/">
+          <a href="https://www.facebook.com/itscuptoyoo" target="_blank">
             <img src="img/social/facebook.png" alt="">
           </a>
-          <a href="https://www.instagram.com/itscuptoyoo/">
+          <a href="https://www.instagram.com/itscuptoyoo/" target="_blank">
             <img src="img/social/instagram.png" alt="">
           </a>
-          <a href="https://www.tiktok.com/">
+          <a href="https://www.tiktok.com/@itscupto.yoo" target="_blank">
             <img src="img/social/tiktok.png" alt="">
           </a>
-          <a href="gmailto:">
+          <a href="mailto:callmeyoo.14@gmail.com" target="_blank">
             <img src="img/social/gmail.webp" alt="">
           </a>
         </div>
@@ -204,8 +211,7 @@
       </div>
 
       <div class="footer-links">
-        <a href="mailto:hello@itscuptoyoo.com">Email us</a>
-        <a href="https://www.instagram.com/itscuptoyoo/">Instagram</a>
+        <a href="mailto:hello@itscuptoyoo.com">Contact us</a>
       </div>
 
     </div>

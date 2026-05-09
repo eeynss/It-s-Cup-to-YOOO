@@ -17,9 +17,16 @@
 
     <nav class="site-nav" id="site-nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
-      <a href="menu.html">Menu</a>
+      <div class="dropdown">
+        <a href="menu.html">Menu ▾</a>
+        <div class="dropdown-menu">
+          <a href="menu.html#flavors">Flavors / Offerings</a>
+          <a href="menu.html#toppings">Toppings</a>
+          <a href="menu.html#more">Others</a>
+        </div>
+      </div>
       <a href="index.html#shop">Location</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html#contact">Contact</a>
     </nav>
   </header>
 
@@ -28,11 +35,13 @@
       <div class="slider-headings">
         <p class="eyebrow">OUR MOST BELOVED</p>
         <h1>YOOOO!</h1>
+      </div>
+      <div class="slide-copy">
+        <p id="slide-title">YOOOOO!</p>
         <p class="description">
-         Create your own perfect cup with our self-serve frozen yogurt, ice cream, and delicious toppings. Mix flavors, candies, fruits, and syrups to make every treat fun and uniquely yours.
+          Create your own perfect cup with our self-serve frozen yogurt, ice cream, and delicious toppings. Mix flavors, candies, fruits, and syrups to make every treat fun and uniquely yours.
         </p>
       </div>
-      <p id="slide-title">YOOOOO!</p>
     </section>
 
     <section class="flavor-section" id="flavors">
@@ -154,7 +163,7 @@
       <img class="topping topping-nips" src="img/nips.webp" alt="">
       <img class="topping topping-mangt" src="img/mangotop.webp" alt="">
 
-      <div class="toppings-content">
+      <div class="toppings-content" id="toppings">
         <p class="big-number">15+</p>
         <h2>Toppings</h2>
       </div>
