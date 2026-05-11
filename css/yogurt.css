@@ -13,7 +13,7 @@ html {
 body {
   margin: 0;
   color: #372819;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #fff7ea;
 }
 
@@ -36,6 +36,13 @@ body.menu-page::before {
   z-index: -1;
 }
 
+h1,
+h2,
+h3,
+p {
+  font-family:'League Spartan', sans-serif;
+  font-weight:500px;
+}
 
 img {
   max-width: 100%;
@@ -157,6 +164,9 @@ section {
   min-height: 86vh;
   width: min(1120px, 100%);
   margin: 0 auto;
+}
+.hero h1{
+  color: #ff6b00;
 }
 
 .eyebrow {
@@ -872,7 +882,7 @@ h1 {
   margin: 0 auto;
   padding: 30px;
   border-radius: 44px;
-  background: rgba(252, 71, 0, 0.377);
+  background: rgba(201, 182, 182, 0.377);
   border: 3px solid rgb(255, 255, 255);
   box-shadow: 0 24px 60px rgba(62, 33, 10, 0.18);
   backdrop-filter: blur(22px);
@@ -884,7 +894,7 @@ h1 {
   
 }
 .loc-card p {
-  color: #fcfcfc;
+  color: #f07501;
 }
 
 .loc-card iframe {
@@ -1652,7 +1662,8 @@ h1 {
 
 .loyalty-section {
   padding: 70px 20px;
-  background: #f4f4f40a;
+  background: #ffe8cc
+  
 }
 
 .loyalty-card {
@@ -1661,16 +1672,18 @@ h1 {
   margin: auto;
   padding: 50px 40px;
   border-radius: 28px;
-  background:
+  border-radius: 44px;
+    background:
     linear-gradient(
       180deg,
-      #f87000 0%,
-      #04ddcb 45%,
-      #012dee 100%
+      #ee9247 0%,
+      #7ff7ed 45%,
+      rgb(122, 147, 255) 100%
     );
-
-  box-shadow:
-    0 18px 40px rgba(0,0,0,0.1);
+  border: 3px solid rgba(240, 56, 0, 0.418);
+  box-shadow: 0 24px 60px rgba(62, 33, 10, 0.18);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
   overflow: hidden;
 }
 
@@ -1694,7 +1707,39 @@ h1 {
 .loyalty-text {
   max-width: 620px;
   margin-top: 22px;
-  color: #4b2a12;
+  color: #4b2a12;@media (max-width:768px){
+
+  .topping-banana,
+  .topping-crushg,
+  .topping-springkle,
+  .topping-minim,
+  .topping-grapes,
+  .topping-nips,
+  .topping-mangt{
+    left:auto;
+    right:auto;
+
+    max-width:40vw;
+  }
+
+  .topping-banana{
+    right:-10px;
+    top:40px;
+  }
+
+  .topping-crushg{
+    left:-10px;
+    bottom:40px;
+  }
+
+  .topping-springkle{
+    left:10px;
+  }
+
+  .topping-minim{
+    right:10px;
+  }
+}
   font-size: clamp(14px, 1.3vw, 18px);
   line-height: 1.7;
 }
@@ -1723,12 +1768,12 @@ h1 {
   width: 110px;
   height: 110px;
   border-radius: 50%;
-  background: #0591ee;
+  background: #05b6b6a9;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 48px;
-  border: 6px solid orangered;
+  border: 6px solid rgba(0, 255, 221, 0.568);
   box-shadow: 0 12px 24px rgba(0,0,0,0.12);
 }
 
@@ -1779,3 +1824,5 @@ body{
     max-width:100%;
   }
 }
+
+
