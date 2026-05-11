@@ -47,8 +47,7 @@ if (sliderContainer && titleDisplay) {
   let windowWidth = window.innerWidth;
   let windowHeight = window.innerHeight;
   let windowCenterX = windowWidth / 2;
-  let arcBaselineY = windowHeight * 0.35;
-
+  let arcBaselineY = windowHeight * 0.48
   let scrollCurrent = 0;
   let scrollTarget = 0;
 
@@ -243,7 +242,7 @@ if (heroImage && heroTitle && heroDesc) {
   setInterval(changeHero, 3000);
 }
 
-/* MOBILE NAV */
+
 const menuButton = document.querySelector(".menu-button");
 const siteNav = document.getElementById("site-nav");
 
@@ -254,3 +253,42 @@ if (menuButton && siteNav) {
   });
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  const darkToggle = document.getElementById("darkToggle");
+
+  if (!darkToggle) return;
+
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+    darkToggle.textContent = "☀️";
+  }
+
+  darkToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+      darkToggle.textContent = "☀️";
+      localStorage.setItem("theme", "dark");
+    } else {
+      darkToggle.textContent = "🌙";
+      localStorage.setItem("theme", "light");
+    }
+  });
+});
+
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 600) {
+    scrollTopBtn.classList.add("show");
+  } else {
+    scrollTopBtn.classList.remove("show");
+  }
+});
+
+scrollTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
