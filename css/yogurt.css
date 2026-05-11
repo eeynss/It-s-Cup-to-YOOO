@@ -1497,7 +1497,13 @@ h1 {
 .slide,
 .slide img,
 .slide-product-img,
-.slide-bg-img {
+.slide-bg-img,
+.slider-headings,
+.slide-copy,
+.slider h1,
+.slider p,
+.slider h2,
+.slider span {
   user-select: none;
   -webkit-user-select: none;
   -webkit-user-drag: none;
@@ -1633,8 +1639,8 @@ h1 {
   }
 
   .slide-bg-img {
-    width: 220%;
-    height: 220%;
+    width: 100%;
+    height: 100%;
   }
 
   .slide-product-img {
@@ -1741,5 +1747,35 @@ h1 {
     height: 85px;
     right: 16px;
     font-size: 36px;
+  }
+}
+
+html,
+body{
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+}
+
+@media (max-width:768px){
+  .slider{
+    width:100vw;
+    max-width:100vw;
+    overflow:hidden;
+  }
+
+  .slide{
+    max-width:100vw;
+    overflow:hidden;
+  }
+
+  .slide-bg-img{
+    width:100%;
+    height:100%;
+  }
+
+  .slide-product-img,
+  .slide img{
+    max-width:100%;
   }
 }
