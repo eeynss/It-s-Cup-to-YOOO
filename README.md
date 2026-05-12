@@ -35,11 +35,12 @@ This project was created for academic purposes only. Any logos, product images, 
 ---
 
 ## Technologies Used
-- HTML5 – Semantic webpage structure
-- CSS3 – Styling, animations, responsive layout, and effects
+- HTML – Semantic webpage structure
+- CSS – Styling, animations, responsive layout, and effects
 - JavaScript – Interactivity and functionality
 - Responsive Web Design – Mobile-friendly layout techniques
-- Git & GitHub – Host Version control and project management
+- Canva - For Photo Editing
+- GitHub – Host Version control and project management
 
 ---
 
